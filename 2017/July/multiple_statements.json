@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+	  "Sid": "ReadAllS3Buckets",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetObject"],
+      "Resource": "*"
+    },
+      {
+	  "Sid": "DenyAuditLogsS3Buckets",
+      "Effect": "Deny",
+      "Action": "s3:*",
+      "Resource": ["arn:aws:s3:::aws-cloudtrail-logs*", "arn:aws:s3:::aws-config-logs*"]
+    }
+  ]
+}

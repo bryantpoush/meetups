@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SidIdentifier",
+      "Effect": "Allow",
+      "Action": ["ec2:StartInstances"],
+      "Resource": "*",
+	  "Condition": {
+			"StringEquals": {
+				"ec2:Region": "us-east-1"
+			}
+		}
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{  
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+     "Effect": "Allow",
+      "Action": "ec2:RunInstances",
+      "Resource": [
+        "arn:aws:ec2:region::image/ami-*",
+        "arn:aws:ec2:region:account:network-interface/*",
+        "arn:aws:ec2:region:account:key-pair/*",
+        "arn:aws:ec2:region:account:security-group/*",
+        "arn:aws:ec2:region:account:subnet/subnet-ec71c7a4",
+        "arn:aws:ec2:region:account:subnet/subnet-791fda55",
+        "arn:aws:ec2:region:account:subnet/subnet-4e2cd76e"
+      ]
+    }
+  ]
+ }
